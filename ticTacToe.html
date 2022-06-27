@@ -1,25 +1,3 @@
-<!--Rules: 
-    1.	Using any of the tools you’ve worked with so far, create a game of tic-tac-toe.
-a.	A heading should say whether it is X’s or O’s turn and change with each move made.
-b.	Create a tic-tac-toe grid using your HTML element of choice. 
-When a cell in the grid is clicked, 
-an X or O should appear in that 
-spot depending on whose turn it is.
-c.	A button should be available to clear the grid and restart the game.
-d.	When a player has won, or the board is full and the game results in
-a draw, a Bootstrap alert or similar Bootstrap component should appear 
-across the screen announcing the winner.
--->
-
-<!--What I need: 
-1. heading that says whether it is X's or O's turn
-2. TicTacToe grid
-3. Button to clear grid and restart game. 
-4. Alert message anouncing winner or draw if a tie: NEED Bootstrap for this-->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -38,6 +16,7 @@ across the screen announcing the winner.
             <div class="rulesDiv">
                 <h3>You are X. The computer is O. The game begins when you click on one of the boxes. Good luck!</h3>
             </div>
+            <div>
             <div class="tableDiv">
             <table id="gameBoard" class="table table-light table-bordered table align-middle table center"> 
             <tr>
@@ -56,13 +35,14 @@ across the screen announcing the winner.
                 <td class="cell" id="8"></td>
             </tr>   
             </div>
+            </div>
             <div class="endGame">
                 <div class="text"></div>
                     <div>                            
                     <button onClick="startGame()">Play Again!</button>                        
                 </div>
             </div>
-        </div>
+        </div> <!--closing container div-->
         </table>
 
        <!--Scripts-->

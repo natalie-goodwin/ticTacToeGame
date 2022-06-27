@@ -19,14 +19,15 @@ startGame(); /* calls this to start the game*/
 function startGame() { /*this happens when the game starts */ 
    document.querySelector('.endGame').style.display = "none"
     gameBoard = Array.from(Array(9).keys()) /*create an array of nine 
-    elements and just the keys of the elements */
+    elements and just the keys of the elements; The keys() method returns a new array iterator 
+    object that contains the keys for each index in the array - array.prototype.keys */
     for (let i = 0; i < cells.length; i++) {    
         cells[i].innerText = ''; /*nothing in cell at start of game */
         cells[i].style.removeProperty('background-color'); /*each winning cell is 
         highlighted and win game restarts, background color will disappear */
-        cells[i].addEventListener('click', turnClick, false);
+        cells[i].addEventListener('click', turnClick, false); /*when player clicks a square, it calls the turnClick function */
      }
-} /*when player clicks a square, it calls the turnClick function */
+} 
 
 function turnClick(square) {
     if (typeof gameBoard[square.target.id] == 'number') { /* an index without an X or O is playable
