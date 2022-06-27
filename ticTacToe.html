@@ -27,12 +27,19 @@ across the screen announcing the winner.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles.css" rel="stylesheet">
-        <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
         
     </head>
     <body class="container">
         <div class="container">
-        <!--<table id="gameBoard" class="table table-light table-bordered table align-middle table center"> 
+            <div class="titleDiv">
+                <h1>TIC-TAC-TOE</h1>
+            </div>
+            <div class="rulesDiv">
+                <h3>You are X. The computer is O. The game begins when you click on one of the boxes. Good luck!</h3>
+            </div>
+            <div class="tableDiv">
+            <table id="gameBoard" class="table table-light table-bordered table align-middle table center"> 
             <tr>
                 <td class="cell" id="0"></td>
                 <td class="cell" id="1"></td>
@@ -48,52 +55,17 @@ across the screen announcing the winner.
                 <td class="cell" id="7"></td>
                 <td class="cell" id="8"></td>
             </tr>   
-              
-        </table>
-
-       <div class="endGame">
-            <div class="text">
-                <div class="alert alert-light" role="alert">
-                    <p>Draw! No Winner!</p>
-                  </div>         
-                <button onClick="startGame()">Game Over! Replay!</button>                        
             </div>
-        </div>-->
-
-        
-        
-       <table> 
-                <tr>
-                    <td class="cell" id="0"></td>
-                    <td class="cell" id="1"></td>
-                    <td class="cell" id="2"></td>
-                </tr>
-                <tr>
-                    <td class="cell" id="3"></td>
-                    <td class="cell" id="4"></td>
-                    <td class="cell" id="5"></td>
-                </tr>
-                <tr>
-                    <td class="cell" id="6"></td>
-                    <td class="cell" id="7"></td>
-                    <td class="cell" id="8"></td>
-                </tr>
-            </table>
-                <div class="endGame">
-                    <div>   
-                        <div class="alert alert-light" role="alert">
-                            <p>Draw! No Winner!</p>
-                        </div>     
-                <button onClick="startGame()">Game Over! Replay!</button>                        
+            <div class="endGame">
+                <div class="text"></div>
+                    <div>                            
+                    <button onClick="startGame()">Play Again!</button>                        
                 </div>
             </div>
         </div>
+        </table>
 
-
-
-
-
-        <!--Scripts-->
+       <!--Scripts-->
         <script src="ticTacToe.js"></script>
         <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
